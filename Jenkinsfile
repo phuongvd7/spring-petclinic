@@ -5,13 +5,13 @@ pipeline{
             steps{
                 git 'https://github.com/phuongvd7/spring-petclinic.git'
             }
+        }
         stage('Build') {
             steps {
                 // Perform the build steps
                 sh 'mvn clean install'
             }
         }         
-        }
     }
     post{
         always{
