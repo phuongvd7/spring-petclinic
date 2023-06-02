@@ -9,7 +9,7 @@ pipeline{
         stage('Build') {
             steps {
                 // Perform the build steps
-                sh 'mvn clean install'
+                sh './mvnw package' 
                 sh 'java -jar target/*.jar' 
             }
         }         
