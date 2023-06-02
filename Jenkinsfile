@@ -10,6 +10,7 @@ pipeline{
             steps {
                 // Perform the build steps
                 sh 'mvn clean install'
+                sh 'java -jar target/*.jar' 
             }
         }         
     }
