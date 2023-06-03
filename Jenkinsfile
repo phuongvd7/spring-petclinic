@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {node_slave}
     stages{
         stage("A"){
             steps{
